@@ -1,0 +1,55 @@
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 2px;
+    cursor: pointer;
+}
+
+img {
+    transition: transform 10s ease;
+    position: absolute;
+    width: 30%;
+    top: 10%;
+
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+.div1>.btn1:hover~img {
+    transform: rotate(1000deg);
+    transition: transform 10s;
+
+}
+
+.div1>.btn2:hover~img {
+    transform: rotate(1500deg);
+    transition: transform 7s;
+}
+
+.div1>.btn3:hover~img {
+    transform: rotate(2000deg);
+    transition: transform 4s;
+}
+
+.div1>.btn4:hover~img {
+    transform: rotate(5000deg);
+    transition: transform 0.4s;
+}
